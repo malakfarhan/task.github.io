@@ -1,0 +1,93 @@
+<div class="col-md-6 padmar-zero">
+ <img src="img/All.jpg" width="100%">  
+</div>
+<div class="col-md-6">
+  <div class="main-form main-form-pop-up">
+  <h4 class="text-center" >Get In Touch</h4>
+  <div class="row mr-5  " style="padding-top: 50px; font-size: 0.7em; color: #848688;">
+                  <div class="row">
+                    <div class="col-md-6" >
+                      <div class="dbox w-100 d-flex align-items-start">
+                        <div class="text" >
+                          <p>
+                            <span style="font-weight: bold;"> US Address:</span><br> 1960 E-7 Street 3-E Brooklyn NY 11223<br>Contact: +1(347)351 0936</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="dbox w-100 d-flex align-items-start">
+                        <div class="text">                          
+                          <p><span >PK Address:</span><br> 64-E Syed Jamal-Ud-Din Afghani Rd<br> University Town, Peshawar KP, Pakistan<br>Contact: +92(091) 304 0257</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6">
+                      <div class="dbox w-100 d-flex align-items-start">
+                        <div class="text">
+                          <p><span>UAE Address:</span><br> Damas Tower Office 1604 16/2, Al Maktoum Rd Riggat Al Buteen<br> Deira Dubai, UAE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6" style="padding-top: 18px;">
+                      <div class="dbox w-100 d-flex align-items-start">
+                        <div class="text">
+                          <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@eastmaye.com</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+  <form action="https://leads.ellingtonproperties.ae/" method="post">
+      <ul>
+          <li>
+              <label>Full Name</label>
+              <input type="text" name="FullName" class="txt-field" required>
+          </li>
+          <li>
+              <label>Phone Number</label>
+              <div><input type="tel" id="txtPhone2" name="PhoneNumber2" class="txt-field" required/></div>
+          </li>
+          <li>
+              <label>Email Address</label>
+              <input type="email" name="Email" class="txt-field" required>              
+          </li>
+          <li>
+              <button type="submit" class="cta-btn w100p" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> submit">Submit</button>
+          </li>
+      </ul>
+    </form>  
+  </div>
+</div>  
+
+<!-- Phone number -->
+        <script>
+        $(function () {
+            var code = "+92"; // Assigning value from model.
+            $('#txtPhone2').val(code);
+            $('#txtPhone2').intlTelInput({
+                autoHideDialCode: true,
+                autoPlaceholder: "ON",
+                dropdownContainer: document.body,
+                formatOnDisplay: true,
+                hiddenInput: "full_number",
+                initialCountry: "auto",
+                nationalMode: true,
+                placeholderNumberType: "MOBILE",
+                preferredCountries: ['US'],
+                separateDialCode: true
+            });
+           
+        });
+    </script>
+
+        <!-- Phone number -->
+        <script>
+            $(document).ready(function() {
+                $("#PhoneNumberRegisterInterest").CcPicker({
+                    "countryCode": "ae"
+                  });                
+            });        
+        </script>
